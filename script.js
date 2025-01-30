@@ -1,8 +1,8 @@
 document.querySelector('.yes').addEventListener('click', () => {
   
   const messages =document.querySelectorAll('.message-js');
-  messages[0].textContent = 'Yayyy I LOVE YOUU!!';
-  messages[1].textContent = 'Thank you for being my Valentine!'
+  messages[0].textContent = 'YAYYY I LOVE YOUU!!';
+  messages[1].textContent = ''
 });
 
 
