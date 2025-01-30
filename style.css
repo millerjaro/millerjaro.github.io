@@ -1,56 +1,72 @@
-p{
+p {
   font-family: Playfair Display;
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0px;
 }
 
-body{
-    background-color: rgb(216, 233, 239);
+body {
+  background-color: rgb(216, 233, 239);
+  justify-content: center;
 }
 
-.yes{
+.yes {
   background-color: rgb(189, 66, 66);
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   padding: 5px 15px;
-  font-size: 1rem;
+  font-size: 3rem;
   color: white;
   border-radius: 20px;
   transition: padding 0.15s;
+  animation: beat 1s infinite;
 }
 
-.yes:hover{
+.yes:hover {
   padding: 6px 16px;
 }
 
-.no{
+.no {
   background-color: rgb(40, 37, 37);
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   padding: 5px 15px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   border-radius: 20px;
   transition: padding 0.15s;
 }
 
-.no:hover{
+.no:hover {
   padding: 6px 16px;
 }
 
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 130px;
 }
-.msg-container{
+
+.msg-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.btn-container{
+
+.btn-container {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
